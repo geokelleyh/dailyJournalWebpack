@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+  <link rel="stylesheet" href="styles/journal.css">
+  <title>Daily Journal</title>
+</head>
+
+
+
+<body>
+  <article id="editLog">
+
+  </article>
+  <div class="paper">
+    <div class="text" contenteditable spellcheck="true">
+      <h2> </h2>
+      <div class="lines">
+
+        <div>
+
+          <fieldset class="fieldSet">
+            <!-- Input for date with date picker -->
+            <label for="journalDate"><strong>Date of Entry</strong></label>
+            <input type="date" name="journalDate" id="journalDate" value="yyyy-MM-dd" min="2019-07-01" max="2020-1-30">
+            <span class="validity"></span>
+            <!-- input for concepts -->
+            <br> <label for="conceptsCovered"><strong>Concepts Covered</strong></label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered">
+            <!-- text entry for the daily entry -->
+            <br><label for="dailyEntry"><strong>Daily Entry</strong></label>
+            <input type="text" name="dailyEntry" id="dailyEntry"><br>
+            <!-- dropdown selector for moodForTheDay -->
+            <label for="moodForTheDay"><strong>Mood For The Day</strong></label>
+            <select name="Mood For The Day" id="mood">
+              <option value="I must be the dumbest MoFo in this joint"> <strong>I must be the dumbest MoFo in this
+                  joint</strong></option>
+              <option value="Don't ask me anything, I am an imposter people!"><strong>Don't ask me anything, I am an
+                  imposter people!</strong></option>
+              <option value="I see no evidence of success...YET, but oddly enough, I have faith"><strong>I see no
+                  evidence of success...YET, but oddly enough, I have faith</strong></option>
+              <option value="I may, just may, make it out alive!"><strong>I may, just may, make it out alive!</strong>
+              </option>
+            </select>
+
+          </fieldset>
+          <!-- hidden input the entry id component -->
+          <input type="hidden" id="hiddenInput">
+          <button id="inputButton">Click to enter info</button>
+
+        </div>
+        <div class="journalContent">
+     
+       
+          </div>
+        </div>
+
+
+
+        <div class="holes hole-top"></div>
+        <div class="holes hole-middle"></div>
+        <div class="holes hole-bottom"></div>
+      </div>
+
+      <script type="module" src="scripts/journal.js"></script>
+</body>
+
+
+
+
+</html>
